@@ -1,0 +1,7 @@
+{
+    "artist_id": {
+      "ref": "#/relationship/mongodb-atlas/tattoonetwork/opinions",
+      "foreign_key": "artist_id",
+      "is_list": false
+    }
+  }

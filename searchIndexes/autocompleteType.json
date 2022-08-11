@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "dynamic": false,
+    "fields": {
+      "name": {
+        "maxGrams": 10,
+        "minGrams": 3,
+        "type": "autocomplete"
+      }
+    }
+  }
+}

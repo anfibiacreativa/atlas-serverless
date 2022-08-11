@@ -1,0 +1,85 @@
+{
+    "name": "$name",
+    "artist_id": {"$integer": {"min": 0, "max": 999}},
+    "email": "$email",
+    "styles": {
+        "$pickset": {
+            "array": [
+                "traditional",
+                "old school",
+                "new traditional",
+                "tribal",
+                "watercolor",
+                "blackwork",
+                "realism",
+                "japanese",
+                "trash polka",
+                "geometric",
+                "black and grey",
+                "aesthetic",
+                "small tattoo",
+                "abstract",
+                "3D tattoo",
+                "cartoon",
+                "continous line"
+            ],
+            "quantity": 3
+        }
+    },
+    "image": {
+        "$choose": {
+            "from": [
+                "reimso.jpg",
+                "wwpu6y.jpg",
+                "xgiyat.jpg",
+                "vtqtbz.jpg",
+                "ayzch6.jpg",
+                "ardzu5.jpg",
+                "dbnnos.jpg",
+                "tclyet.jpg",
+                "hh3njp.jpg",
+                "gyi5gk.jpg",
+                "geu5pj.jpg",
+                "tyba45.jpg",
+                "bsrpq.jpg",
+                "j03iy.jpg",
+                "x2rce.jpg",
+                "ovcmuj.jpg",
+                "ck8kvy.jpg",
+                "kb1sfo.jpg",
+                "tj2vxt.jpg",
+                "jhli2.jpg",
+                "bvxjy.jpg",
+                "r6e84.jpg",
+                "0tu5l.jpg",
+                "saji0.jpg",
+                "lpfgm.jpg"
+            ]
+        }
+    },
+    "country": "$country",
+    "joined_network": {"$date": {"min": "2012-08-31T23:59:59.999Z", "max": "$now"}},
+    "owns_studio": {
+        "$choose": {
+            "from": [
+                "Yes",
+                "No"
+            ]
+        }
+    },
+    "location": {
+        "$coordinates": {
+            "long_lim": [1, 105],
+            "lat_lim": [40, 60]
+        }
+    },
+    "payment_method": {
+        "$choose": {
+            "from": [
+                "Cash Only",
+                "Credit Card Only",
+                "Cash and Credit Card"
+            ]
+        }
+    }
+}

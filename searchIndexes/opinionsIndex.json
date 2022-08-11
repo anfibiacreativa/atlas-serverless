@@ -1,0 +1,11 @@
+{
+    "mappings": {
+      "dynamic": false,
+      "fields": {
+        "artist_id": {
+          "type": "number"
+        }
+      }
+    }
+  }
+  

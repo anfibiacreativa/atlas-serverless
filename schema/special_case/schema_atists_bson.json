@@ -1,0 +1,78 @@
+{
+    "title": "artist",
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "artist_id": {
+        "bsonType": "int"
+      },
+      "client_opinions_count": {
+        "bsonType": "int"
+      },
+      "country": {
+        "bsonType": "string"
+      },
+      "email": {
+        "bsonType": "string"
+      },
+      "image": {
+        "bsonType": "string"
+      },
+      "joined_network": {
+        "bsonType": "date"
+      },
+      "location": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "double"
+        }
+      },
+      "name": {
+        "bsonType": "string"
+      },
+      "owns_studio": {
+        "bsonType": "string"
+      },
+      "payment_method": {
+        "bsonType": "string"
+      },
+      "slug": {
+        "bsonType": "string"
+      },
+      "styles": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "string"
+        }
+      },
+      "highlights": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "object",
+          "properties": {
+            "path": {
+              "bsonType": "string"
+            },
+            "texts": {
+              "bsonType": "array",
+              "items": {
+                "bsonType": "object",
+                "properties": {
+                  "value": {
+                    "bsonType": "string"
+                  },
+                  "type": {
+                    "bsonType": "string"
+                  }
+                }
+              }
+            },
+            "score": {
+              "bsonType": "double"
+            }
+          }
+        }
+      }
+    }
+  }

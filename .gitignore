@@ -1,0 +1,11 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Other files
+/script.rtf
+
+/tattoo-app
+
+# dependencies
+node_modules

@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "title": "AllArtistsInput",
+    "properties": {
+      "term": {
+        "bsonType": "string"
+      },
+      "facets": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "string"
+        }
+      },
+      "country": {
+        "bsonType": "string"
+      },
+      "rating": {
+        "bsonType": "decimal"
+      }
+    }
+  }
